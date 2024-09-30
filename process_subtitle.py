@@ -19,6 +19,7 @@ def subtitle_cleaning(file_sub):
 
     with open(file_sub.rsplit('.', 1)[0] + "_handled.txt", "w") as f:
         f.write("\n".join(new_content))
+    return file_sub.rsplit('.', 1)[0] + "_handled.txt"
 
-sub_file = "captions.txt"
-subtitle_cleaning(sub_file)
+# sub_file = "captions.txt"
+# subtitle_cleaning(sub_file)
